@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-
-     --black: #121212;  
-     --font-family: "Inter", sans-serif;
-
-
+  --black: #121212;
+  --font-family: "Inter", sans-serif;
+  --Black: #000000;
+  --White: #ffffff;
+  --body-color: #ffffff;
+  --Poppins: "Poppins";
+  --Instrument-Serif: "Instrument Serif";
   /* --font-family: "Poppins", sans-serif; */
-  
 }
 * {
   margin: 0;
@@ -20,46 +21,37 @@ body {
   height: 100%;
   width: 100%;
   font-size: 20px;
-   font-family: "Poppins", sans-serif;
-   display: flex;
-   justify-content: center;
-  
-}
-
-
-.main {
-  /* height: 100vh; */
-  width: 700PX;
-  display: flex;
-  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  /* display: flex; */
   /* justify-content: center; */
-  background-color: white;
-  /* display: none; */
-/* border: 1px solid brown; */
 }
-
 
 .logo a {
   text-decoration: none;
   color: var(--black);
   font-family: var(--font-family);
-  font-size: 20PX;
+  font-size: 20px;
   font-weight: 500;
   /* color:var(--black); */
 }
 
-.nav {
+.header{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 1.3rem 0rem;
+  justify-content: center;
 }
 
-
+.nav {
+  width: 896px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: rgba(204, 199, 199, 0.913);
+}
 
 .menu-head {
   display: flex;
   gap: 20px;
-  
 }
 
 .menu-head li {
@@ -73,35 +65,67 @@ body {
 .menu-head li a {
   text-decoration: none;
   font-family: var(--font-family);
-    color: var(--black);
+  color: var(--black);
 
-   font-size: 20PX;
-   font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
- .btn-menu-ct {
+.btn-menu-ct {
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
- background-color:var(--black); 
-} 
+  background-color: var(--black);
+}
 
 .btn-menu-ct a {
   font-family: var(--font-family);
-   font-size: 15PX;
-   /* font-weight: 500; */
+  font-size: 15px;
+  /* font-weight: 500; */
   text-decoration: none;
   color: white;
-} 
-
-P{
-    margin-top: 2rem;
-    color: var(--black);
-    padding: 10px 0px;
-    font-size: 22px;
-    font-family: var(--font-family);
 }
 
+.outer {
+  background-color: var(--body-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  max-width: 896px;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #cecbcb 5px
+      /* rgba(204, 199, 199, 0.913) 5px */
+    ),
+    repeating-linear-gradient(#f5f5f555, #f0f0f0);
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  max-width: 776px;
+  width: 100%;
+  background-color: var(--body-color);
+}
+
+
+
+.about P {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--black);
+  padding: 10px 0px;
+  font-size: 18px;
+  font-family: var(--font-family);
+  /* background-color: rgba(204, 199, 199, 0.913); */
+}
 
 .hero {
   display: flex;
@@ -111,110 +135,99 @@ P{
   width: 100%;
   flex-direction: row;
   gap: 1rem;
-color: var(--dark-black);
-font-family: var(--roboto);
+  color: var(--dark-black);
+  font-family: var(--roboto);
 }
 
-.get-button{
+.get-button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
 }
 
-.get-button button{
+.get-button button {
   padding: 15px 25px;
   background-color: var(--black);
   border-radius: 30px;
- 
-  letter-spacing: 1px;
 
+  letter-spacing: 1px;
 }
-.get-button button a{
+.get-button button a {
   text-decoration: none;
   font-family: var(--font-family);
   color: white;
-   font-size: 1rem;
-  
+  font-size: 1rem;
 }
-.productivity{
+.productivity {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
   gap: 10px;
 }
-.to-do{
+.to-do {
   display: flex;
   justify-content: center;
 }
-.todo-img{
+.todo-img {
   height: 300px;
   width: 350px;
   /* background-color: rgb(197, 195, 195); */
   border: 1px solid #474746;
-  opacity: .5;
+  opacity: 0.5;
 }
-.todo-ct{
+.todo-ct {
   height: 300px;
   width: 350px;
   background-color: rgb(173, 170, 170);
- 
 }
-.daily-planner{
+.daily-planner {
   display: flex;
   justify-content: center;
-
 }
-.daily-planner-ct{
+.daily-planner-ct {
   height: 300px;
   width: 350px;
   background-color: rgb(173, 170, 170);
-
 }
-.daily-planner-img{
-height: 300px;
+.daily-planner-img {
+  height: 300px;
   width: 350px;
-    border: 1px solid #474746;
-  opacity: .5;
+  border: 1px solid #474746;
+  opacity: 0.5;
 }
-.motivational{
+.motivational {
   display: flex;
   justify-content: center;
-
 }
-.motive-ct{
+.motive-ct {
   height: 300px;
   width: 350px;
   background-color: rgb(173, 170, 170);
-
 }
-.motive-img{
+.motive-img {
   height: 300px;
   width: 350px;
-    border: 1px solid #474746;
-  opacity: .5;
-
+  border: 1px solid #474746;
+  opacity: 0.5;
 }
-.promodoro{
-   display: flex;
+.promodoro {
+  display: flex;
   justify-content: center;
-
 }
-.promo-ct{
-   height: 300px;
-  width: 350px;
-  background-color: rgb(173, 170, 170);
-
-}
-.promo-img{
+.promo-ct {
   height: 300px;
   width: 350px;
-    border: 1px solid #474746;
-  opacity: .5;
-
+  background-color: rgb(173, 170, 170);
+}
+.promo-img {
+  height: 300px;
+  width: 350px;
+  border: 1px solid #474746;
+  opacity: 0.5;
 }
 
-.footer{
+.footer {
   height: 300px;
   width: 100%;
   /* background-color: black; */
@@ -222,16 +235,15 @@ height: 300px;
   font-family: var(--font-family);
 }
 
-.fbox-main{
+.fbox-main {
   display: flex;
 }
 
-.fbox1{
+.fbox1 {
   height: 200px;
   width: 233px;
-  
 }
-.fbox2{
+.fbox2 {
   height: 200px;
   width: 233px;
 
@@ -239,7 +251,7 @@ height: 300px;
   align-items: center;
   justify-content: end;
 }
-.fbox3{
+.fbox3 {
   height: 200px;
   width: 233px;
 
@@ -253,24 +265,22 @@ height: 300px;
   line-height: 1rem;
 
   gap: 20px;
-  
 }
 
 .fmenu-head li {
   list-style: none;
 }
 
-
 .fmenu-head li a {
   text-decoration: none;
   font-family: var(--font-family);
-    color: var(--black);
+  color: var(--black);
 
-   font-size: 20PX;
-   font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.footer p{
+.footer p {
   height: 30px;
   width: 100%;
   font-size: 15px;
