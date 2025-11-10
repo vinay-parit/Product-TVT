@@ -4,7 +4,7 @@
   --black: #121212;
   --font-family: "Inter", sans-serif;
   --Black: #000000;
-  --White: #ffffff;
+  --White: white;
   --body-color: #ffffff;
   --Poppins: "Poppins";
   --Instrument-Serif: "Instrument Serif";
@@ -46,7 +46,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
-  background-color: rgba(204, 199, 199, 0.913);
+  background-color: rgba(224, 221, 221, 0.913);
 }
 
 .menu-head {
@@ -112,6 +112,7 @@ body {
 .inner {
   max-width: 776px;
   width: 100%;
+  padding: 0 2rem;
   background-color: var(--body-color);
 }
 
@@ -169,17 +170,30 @@ body {
   display: flex;
   justify-content: center;
 }
-.todo-img {
+.todo-img img {
   height: 300px;
   width: 350px;
   /* background-color: rgb(197, 195, 195); */
   border: 1px solid #474746;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 .todo-ct {
   height: 300px;
   width: 350px;
   background-color: rgb(173, 170, 170);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-btn {
+  padding: 10px 30px;
+  color: var(--White);
+  background-color: var(--Black);
+  border: none;
+  border-radius: 20px;
 }
 .daily-planner {
   display: flex;
