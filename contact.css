@@ -22,64 +22,7 @@ body {
   background-color: var(--body-color);
 }
 
-/* header {
-  background-color: var(--White);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-nav {
-  max-width: 896px;
-  width: 100%;
-  padding: 1rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo a{
-  font-family: var(--Instrument-Serif);
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding-top: 10px;
-  font-weight: 600;
-  color: var(--Black);
-  text-decoration: none;
-}
-
-.menu {
-  display: flex;
-  gap: 20px;
-  cursor: pointer;
-  font-family: var(--Instrument-Serif);
-  padding-top: 5px;
-  color: var(--Black);
-}
-
-.menu .work {
-  padding-top: 10px;
-}
-
-.work p a {
-  font-size: 1.2rem;
-
-  color: var(--Black);
-  text-decoration: none;
-}
-
-.contact-btn {
-  padding-top: 5px;
-  cursor: pointer;
-}
-
-.contact-btn button {
-  padding: 5px 20px;
-  border-radius: 20px;
-  font-family: var(--Instrument-Serif);
-  font-size: 1rem;
-  cursor: pointer;
-} */
 
 .logo a {
   text-decoration: none;
