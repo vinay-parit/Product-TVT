@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/todo.css" />
+
+    <title>Todo app</title>
+    <script src="../todo-app-main/script.js" defer></script>
+  </head>
+  <body>
+    <div class="bg">
+      <img class="dark" src="/todo-app-main/images/bg-desktop-dark.jpg" alt="dark-bg" />
+      <img
+        class="mob-dark"
+        src="/todo-app-main/images/bg-mobile-dark.jpg"
+        alt="mob-dark-bg"
+      />
+      <img class="light" src="/todo-app-main/images/bg-desktop-light.jpg" alt="light-bg" />
+      <img
+        class="mob-light"
+        src="/todo-app-main/images/bg-mobile-light.jpg"
+        alt="mob-light-bg"
+      />
+    </div>
+
+    <div class="header">
+      <h1 class="heading">T O D O</h1>
+      <div class="theme">
+        <img class="sun" src="/todo-app-main/images/icon-sun.svg" alt="sun" />
+        <img class="moon" src="/todo-app-main/images/icon-moon.svg" alt="moon" />
+      </div>
+    </div>
+
+    <div class="todo">
+      <div class="todo-input">
+        <div class="circle-input"></div>
+        <input type="text" id="input" placeholder="Create a new todo..." />
+      </div>
+    </div>
+
+    <div class="todo-list-parent">
+      <div class="todo-list"></div>
+    </div>
+
+    <div class="bottom">
+      <div class="content">
+        <div class="counter">0 items left</div>
+        <div class="filter">
+          <button class="all">All</button>
+          <button class="active">Active</button>
+          <button class="completed">Completed</button>
+          <button class="Clear-completed">Clear completed</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-filter">
+      <button class="all mob-all">All</button>
+      <button class="active active-all">Active</button>
+      <button class="completed completed-all">Completed</button>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

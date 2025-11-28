@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  
+  --font-family: "Lato";
+  --Black: #000000;
+  --White: white;
+  --body-color: black;
+  --aleo-family: "Aleo";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--White);
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 400;
+  opacity: .6;
+}
+
+.logo a:hover{
+  opacity: 1;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--Black);
+}
+
+.nav {
+  width: 896px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  border-bottom: 1px solid white;
+  
+  /* background-color: rgba(224, 221, 221, 0.913); */
+}
+
+.menu{
+  display: flex; 
+  gap: 15px;
+}
+
+.menu-head {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-head li {
+  list-style: none;
+}
+
+
+.menu-head li a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: var(--White);
+  font-size: 30px;
+  font-weight: 400;
+  opacity: .6;
+}
+
+
+
+.menu-head li a:hover{
+  opacity: 1;
+  border-bottom: 2px solid var(--White);
+  
+}
+
+
+
+.btn-menu-ct {
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--white);
+}
+
+.btn-menu-ct a {
+  font-family: var(--aleo-family);
+  font-size: 15px;
+  /* font-weight: 500; */
+  text-decoration: none;
+  color: black;
+}
+
+.outer {
+  background-color: var(--body-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  max-width: 896px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #525256 0,
+    #0f0f0f 1px,
+    #1e1d1d 0,
+    #202020 50%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image: linear-gradient(-45deg, #e5e5f7, #e5e5f7 50%, #444cf7 50%, #444cf7);
+background-size: 10px 10px;
+*/
+
+.inner {
+  max-width: 776px;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: var(--body-color);
+}
+
+.about{
+  padding: 9rem 0;
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 2rem; */
+  gap: 1rem;
+}
+
+.about span{
+  color: white;
+  font-size: 15px;
+  font-family: var(--font-family);
+  background-color: var(--Black);
+  padding: 7px 12px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px 2px rgb(90, 88, 88);
+}
+
+
+
+.about .para{
+  color: var(--White);
+  text-align: center;
+  padding: 1rem 4rem 2rem 4rem;
+  font-size: 18px;
+  opacity: .6;
+  font-family: var(--font-family);
+}
+
+.about h1 {
+  text-align: center;
+  padding-top: .5rem;
+  /* padding-bottom: 1rem; */
+  font-size: 5rem;
+  color: var(--White);
+  font-family: var(--aleo-family);
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+
+.get-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1rem; */
+}
+
+.get-button button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: var(--White);
+  color:black;
+  letter-spacing: 1px;
+  border: none;
+}
+.get-button button a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+}
+.productivity {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  gap: 4rem;
+}
+
+.todo-box,
+.daily-planner-box,
+.motivation-box,
+.pomodoro-box
+{
+    padding: 2rem;
+    background-color: var(--body-color);
+    width: 100%;
+    color: var(--White);
+}
+
+
+
+.todo-box img, 
+.daily-planner-box img,
+.motivation-box img,
+.pomodoro-box img
+{
+    /* padding: 2rem; */
+    /* width: 600px; */
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.todo-box h3,
+.daily-planner-box h3,
+.motivation-box h3,
+.pomodoro-box h3
+{
+    padding-top: 2rem;
+    font-family: var(--font-family);
+    font-size: 2rem;
+}
+
+.todo-box p,
+.daily-planner-box p,
+.motivation-box p,
+.pomodoro-box p
+{
+    padding-top: 1rem;
+    font-family: var(--font-family);
+    opacity: .4;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.todo-btn , .daily-planner-btn , .motivation-btn , .pomodoro-btn{
+    display: flex;
+    padding-top: 1rem;
+    gap: 20px;
+    font-family: var(--font-family);
+}
+
+.live {
+    padding: 5px 30px;
+     /* padding: 5px 15px; */
+  border-radius: 20px;
+    
+}
+
+.live a{
+    text-decoration: none;
+    color: var(--Black);
+}
+
+.github{
+     padding: 5px 30px;
+     /* padding: 5px 15px; */
+  border-radius: 20px;
+    
+}
+
+.live:hover , .github:hover{
+  background-color: rgb(211, 207, 207);
+}
+
+.github a{
+    text-decoration: none;
+    color: var(--Black);
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+.footer p{
+  color: var(--White);
+  font-family: var(--font-family);
+  opacity: .6;
+}
+
+.icons{
+  display: flex;
+  gap: 10px;
+}
+
+.icons a svg{
+  height: 32px;
+  width: 32px;
+  color: var(--White);
+  opacity: .6;
+}
+
+.icons a{
+  text-decoration: none;
+}
+
+hr{
+  opacity: .6;
+}
